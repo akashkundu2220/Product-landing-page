@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.hover-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.hover-menu li {
+  margin: 10px;
+}
+
+.hover-menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.hover-menu li a:hover {
+  color: #ff6600;
+}
+
+header {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url(tcsbg-removebg-preview.png);
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.company-description {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url(HD-wallpaper-abstract-mix-colors-abstract.jpg);
+  color: white;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.box {
+  padding: 20px;
+  text-align: center;
+  background-image: url(HD-wallpaper-abstract-mix-colors-abstract.jpg);
+  background-size: cover;
+  margin: 20px;
+  width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  color: white;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
